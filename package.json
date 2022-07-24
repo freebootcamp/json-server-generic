@@ -1,0 +1,18 @@
+{
+  "name": "case-study-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sridhar",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}

@@ -1,0 +1,37 @@
+POST http://localhost:5000/signup
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username":"admin2",
+    "password":"password123",
+    "role":"admin"
+}
+
+### Login admin user
+POST http://localhost:5000/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username":"admin",
+    "password":"password123"
+}
+
+### Login normal user
+POST http://localhost:5000/user
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU4Njg1MDkxLCJleHAiOjE2NTg3NzE0OTEsInN1YiI6IjEifQ.mtW1bWdnZomkDrDJSy2WqQohCCfSqvA7SXAgha9qLn0
+
+{
+    "username":"user1",
+    "password":"password123"
+}
+
+### 
+GET http://localhost:5000/protectedResource
+Content-Type: application/json
+Accept: application/json
+#Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU4Njg1MDkxLCJleHAiOjE2NTg3NzE0OTEsInN1YiI6IjEifQ.mtW1bWdnZomkDrDJSy2WqQohCCfSqvA7SXAgha9qLn0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU4Njg1Mjk2LCJleHAiOjE2NTg3NzE2OTYsInN1YiI6IjEifQ.pvocerH3fuvJRY4L2J_5qLwqjRsaUvgqNk7bYBDIoR0
