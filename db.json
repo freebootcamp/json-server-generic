@@ -17,6 +17,12 @@
       "password": "password123",
       "role": "admin",
       "id": 3
+    },
+    {
+      "username": "restaurant1",
+      "password": "password123",
+      "role": "admin",
+      "id": 4
     }
   ],
   "protectedResource": [
